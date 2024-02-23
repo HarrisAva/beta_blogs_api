@@ -3,10 +3,9 @@ class User < ApplicationRecord
     has_many :blogs
     after_create :create_profile
     # all user created will have user profile
+    
+    validates :username, :email, :first_name, :last_name, presence: true
 
-    validates :first_name, presence: true
-    validates :last_name, presence: true
-    validates :email, presence: true
-    validates :username, presence: true
+    has_secure_password
 
 end
