@@ -38,7 +38,7 @@ gem "bootsnap", require: false
  gem "rack-cors"
 
 group :production do
-  # gem 'pg'
+   gem 'pg'
 end
 
 group :development, :test do
