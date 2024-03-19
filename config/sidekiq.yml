@@ -1,0 +1,8 @@
+:scheduler:
+  :schedule:
+    monthly_report_summary:
+      cron: "0 0 1 * *" # Run at midnight on the first day of every month
+      class: "MonthlyReportSummaryJob"
+# cron expression - the first 0 is for the minute, the second 0 is for the hour, the 1 is for the day of the month, and the * is for the month.
+
+# refer to cron schedule expressions at https://crontab.guru/
